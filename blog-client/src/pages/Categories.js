@@ -10,13 +10,13 @@ const Categories = () => {
 
   const fetchposts = async () => {
     const response = await axios.get(
-      `http://localhost:8585/api/posts/category/${id}`
+      `https://blog-server-yd8b.onrender.com/api/posts/category/${id}`
     );
     setposts(response.data);
   };
   const fetchcategory = async () => {
     const response = await axios.get(
-      `http://localhost:8585/api/categories/${id}`
+      `https://blog-server-yd8b.onrender.com/api/categories/${id}`
     );
     setcategory(response.data);
   };
