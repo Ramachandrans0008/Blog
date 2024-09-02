@@ -8,7 +8,7 @@ const PostDetail = () => {
 
   const fetchpost = async () => {
     try {
-      const response = await axios.get(`http://localhost:8585/api/posts/${id}`);
+      const response = await axios.get(`https://blog-server-yd8b.onrender.com/api/posts/${id}`);
 
       setpost(response.data);
     } catch (error) {
