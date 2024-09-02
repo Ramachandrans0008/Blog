@@ -8,11 +8,11 @@ const PostList = () => {
   const [category, setcategory] = useState([]);
 
   const fetchposts = async () => {
-    const response = await axios.get("http://localhost:8585/api/posts");
+    const response = await axios.get("https://blog-server-yd8b.onrender.com/api/posts");
     setposts(response.data);
   };
   const fetchcategory = async () => {
-    const response = await axios.get("http://localhost:8585/api/categories");
+    const response = await axios.get("https://blog-server-yd8b.onrender.com/api/categories");
     setcategory(response.data);
   };
 
